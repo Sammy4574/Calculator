@@ -1,0 +1,98 @@
+.calculator{
+    width: 350px;
+    height: 500px;
+    background-color: rgb(231, 229, 229);
+}
+.c{
+    font-size: 13px;
+}
+.cal{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.minimize{
+    margin-left: 50px;
+}
+.minimize:hover{
+    background-color: darkgrey;
+    box-shadow: 0px 0px 5px darkgrey;
+}
+.standard{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.shift{
+    margin-left: 10px;
+}
+.shift:hover{
+    background-color: darkgrey;
+    box-shadow: 0px 0px 5px darkgrey;
+}
+.history:hover{
+    background-color: darkgrey;
+    box-shadow: 0px 0px 5px darkgrey;
+}
+.red:hover{
+    background-color: red;
+}
+.left{
+    margin-right: 130px;
+    font-size: 18px;
+}
+.rec{
+    margin-top: 20px;
+    /* text-align: right; */
+}
+input::placeholder{
+    text-align: right;
+    padding-right: 3px;
+}
+input{
+    width: 350px;
+    height: 70px;
+    background-color: rgb(231, 229, 229);
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 1px solid black;
+    border-right: 2px solid black;
+}
+.mtable{
+    width: 350px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    border: none;
+}
+.hov:hover{
+    background-color: darkgrey;
+    box-shadow: 0px 0px 5px darkgrey;
+}
+.table{
+    background-color: rgb(231, 229, 229);
+}
+.white{
+    background: white;
+}
+.white:hover{
+    background-color: darkgrey;
+    box-shadow: 0px 0px 5px darkgrey;
+}
+.blue:hover{
+    background-color: dodgerblue;
+    box-shadow: 0px 0px 5px dodgerblue;
+}
+table{
+    text-align: center;
+}
+h1{
+    text-align: right;
+    padding-right: 10px;
+}
+h6{
+    text-align: right;
+    padding-right: 10px;
+}

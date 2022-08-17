@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- FONT AWESOME --> 
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+<link rel="stylesheet" href="../JS/calculator.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="cal">
+            <div class="c">Calculator</div>
+            <div class="minimize">-</div>
+            <div class="hov"><i class="fa fa-square"></i></div>
+            <div class="red"><i class="fa fa-remove"></i></div>
+        </div>
+        
+
+        <div class="standard">
+            <div class="shift"><i class="fa fa-navicon"></i></div>
+            <div class="left"><b>Standard</b></div>
+            <div class="history"><i class="fa fa-history"></i></div>
+        </div>
+
+
+        <div class="rec">
+            <h6 id="h6"></h6>
+            <h1 id="h1">0</h1>
+            <!-- <input type="text" id="h1" placeholder="0"> -->
+        </div>
+
+
+        <div class="mtable">
+            <table align="center" border="1" width="350px">
+                <tr>
+                    <th>MC</th>
+                    <th>MR</th>
+                    <th class="hov"><b>M+</b></th>
+                    <th class="hov"><b>M-</b></th>
+                    <th class="hov"><b>MS</b></th>
+                    <th>M^</th>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="table">
+            <table align="center" border="1" width="350px">
+                <tr>
+                    <th class="hov">%</th>
+                    <th class="hov">&radic;</th>
+                    <th class="hov">X<sup>2</sup></th>
+                    <th class="hov"><sup>1</sup>/<sub>x</sub></th>
+                </tr>
+                <tr>
+                    <th onclick="clrall()" class="hov">CE</th>
+                    <th onclick="clr()" class="hov">C</th>
+                    <th onclick="del()" class="hov"><i class="fa fa-backspace"></i></th>
+                    <th onclick="operator('/')" class="blue"><i class="fa fa-divide"></i></th>
+                </tr>
+                <tr>
+                    <th style="font-size: 25px;" onclick="th(7)" class="white">7</th>
+                    <th style="font-size: 25px;" onclick="th(8)" class="white">8</th>
+                    <th style="font-size: 25px;" onclick="th(9)" class="white">9</th>
+                    <th onclick="operator('*')" class="blue"><i class="fa fa-multiply"></i></th>
+                </tr>
+                <tr>
+                    <th style="font-size: 25px;" onclick="th(4)" class="white">4</th>
+                    <th style="font-size: 25px;" onclick="th(5)" class="white">5</th>
+                    <th style="font-size: 25px;" onclick="th(6)" class="white">6</th>
+                    <th onclick="operator('-')" class="blue"><i class="fa fa-subtract"></i></th>
+                </tr>
+                <tr>
+                    <th style="font-size: 25px;" onclick="th(1)" class="white">1</th>
+                    <th style="font-size: 25px;" onclick="th(2)" class="white">2</th>
+                    <th style="font-size: 25px;" onclick="th(3)" class="white">3</th>
+                    <th onclick="operator('+')" class="blue"><i class="fa fa-add"></i></th>
+                </tr>
+                <tr>
+                    <th class="hov"><sup>+</sup>/<sub>-</sub></th>
+                    <th style="font-size: 25px;" onclick="th(0)" class="white">0</th>
+                    <th onclick="th('.')" class="hov">.</th>
+                    <th onclick="solve('=')" class="blue"><i class="fa fa-equals"></i></th>
+                </tr>
+        </div>
+    </div>
+
+    
+</body>
+<script src="../JS/calculator.js"></script>
+
+</html>
